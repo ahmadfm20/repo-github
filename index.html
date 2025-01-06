@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Selamat Ulang Tahun, Sayang!</h1>
+      <p>Semoga tahun ini penuh kebahagiaan dan berkah!</p>
+    </div>
+
+    <div class="image-container">
+      <img src="ffaa.jpg" alt="Happy Birthday" class="birthday-image">
+    </div>
+
+    <div class="button-container">
+      <button onclick="playBirthdaySong()">Putar Lagu</button>
+      <button onclick="showMessage()">Ucapkan Selamat</button>
+    </div>
+
+    <div id="message-container" class="message-container">
+      <p>🎉 Selamat Ulang Tahun, Sayangkuuu! 🎉</p>
+      <p>Semoga di hari spesial ini, kamu mendapatkan kebahagiaan yang tak terhingga, kesehatan yang sempurna, dan segala impianmu menjadi kenyataan. Teruslah bersinar dan menciptakan momen-momen indah di sepanjang perjalanan hidupmu.</p>
+      <p>Semoga tahun yang baru ini penuh dengan berkah, kebahagiaan, dan kesuksesan. Selamat merayakan hari yang penuh cinta dan kehangatan bersama orang-orang terdekat!</p>
+      <p>🎂 Selamat Ulang Tahun, saya! 🎂</p>
+    </div>
+
+    <!-- Animasi balon hati -->
+    <div class="love-balloon" id="love-balloon1"></div>
+    <div class="love-balloon" id="love-balloon2"></div>
+    <div class="love-balloon" id="love-balloon3"></div>
+    <div class="love-balloon" id="love-balloon4"></div>
+    <div class="love-balloon" id="love-balloon5"></div>
+
+    <audio id="birthday-song" preload="auto">
+      <source src="yy.mp3" type="audio/mp3">
+      <source src="yy.ogg" type="audio/ogg">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+  </div>
+
+  <script src="java.js"></script>
+
+</body>
+</html>

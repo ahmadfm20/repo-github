@@ -1,0 +1,159 @@
+/* Style umum untuk halaman */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to top right, #ff7f50, #ff1493);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ubah dari center ke flex-start untuk memberikan ruang vertikal */
+  min-height: 100vh; /* Agar elemen dapat meluas melebihi tinggi layar */
+   /* Menghindari scroll horizontal */
+  flex-direction: column; /* Membuat elemen-elemen berada dalam urutan vertikal */
+}
+
+/* Menghapus limit tinggi dari .container agar konten bisa meluas */
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 20px; /* Memberikan jarak atas untuk ruang */
+  overflow: visible; /* Memastikan elemen-elemen anak bisa tampil tanpa terpotong */
+}
+
+/* Mengatur bagian header */
+.header h1 {
+  font-size: 3rem;
+  color: #ff4081;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Gambar ulang tahun */
+.birthday-image {
+  width: 80%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol */
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.1);
+}
+
+.message-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message-container p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Desain animasi balon hati */
+.love-balloon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ff4081;
+  clip-path: polygon(50% 0%, 0% 40%, 50% 100%, 100% 40%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: moveLoveBalloon 15s ease-in-out infinite, floatLoveBalloon 8s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+/* Animasi pergerakan acak hati */
+@keyframes moveLoveBalloon {
+  0% {
+    left: 10%;
+    top: 80%;
+  }
+  25% {
+    left: 50%;
+    top: 60%;
+  }
+  50% {
+    left: 90%;
+    top: 40%;
+  }
+  75% {
+    left: 60%;
+    top: 20%;
+  }
+  100% {
+    left: 10%;
+    top: 80%;
+  }
+}
+
+/* Animasi hati melambung */
+@keyframes floatLoveBalloon {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Animasi untuk setiap balon */
+#love-balloon1 {
+  animation-duration: 15s, 8s;
+}
+
+#love-balloon2 {
+  animation-duration: 16s, 8s;
+  animation-delay: 2s, 1s;
+}
+
+#love-balloon3 {
+  animation-duration: 17s, 8s;
+  animation-delay: 4s, 1s;
+}
+
+#love-balloon4 {
+  animation-duration: 14s, 8s;
+  animation-delay: 1s, 1s;
+}
+
+#love-balloon5 {
+  animation-duration: 18s, 8s;
+  animation-delay: 3s, 1s;
+}
